@@ -26,7 +26,8 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return string.Format("{0} {1} {2}\nWeight: {3} lbs. Beds: {4}", Year, Make, Model, Weight, NumberOfBeds);
+            //return string.Format("{0} {1} {2}\nWeight: {3} lbs. Beds: {4}", Year, Make, Model, Weight, NumberOfBeds);
+            return base.ToString() + "\tNumber of Beds: " + NumberOfBeds; 
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    public class Artist
+    public class Album
     {
         //fields
 
@@ -16,7 +16,7 @@ namespace ClassesLibrary
         public string Genre { get; set; }
 
         //ctors
-        public Artist(Song[] tracks, string title, string genre)
+        public Album(Song[] tracks, string title, string genre)
         {
             Tracks = tracks;
             Title = title;
@@ -24,6 +24,7 @@ namespace ClassesLibrary
         }
 
         //methods
+
         public override string ToString()
         {
             return string.Format("Artist: {0} Genre: {1}", Title, Genre);
