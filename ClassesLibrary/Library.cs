@@ -41,7 +41,12 @@ namespace ClassesLibrary
         //methods
         public override string ToString()
         {
-            return LibraryName;
+            string bookList = "";
+            foreach (Book book in Books)
+            {
+                bookList += book.Title + "\n";
+            }
+            return string.Format($"{LibraryName}, \nBooks Available: \n{bookList}");
         }
 
 
